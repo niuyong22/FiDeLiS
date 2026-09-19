@@ -22,12 +22,6 @@ set_verbose = False
 now = datetime.datetime.now()
 timestamp = now.strftime(f"%Y_%m_%d_%H_%M")
 
-with open("config.json", "r") as f:
-    config = json.load(f)
-    
-os.environ["OPENAI_API_KEY"] = config["OPENAI_API_KEY"]
-
-
 def disable_logging_during_run():
    logging.disable(logging.CRITICAL)
    
