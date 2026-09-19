@@ -183,7 +183,7 @@ if __name__ == "__main__":
    parser.add_argument("--save_cache", type=str, default="/data/rog/datasets")
    parser.add_argument("--split", type=str, default="test")
    parser.add_argument("--output_path", type=str, default="results")
-   parser.add_argument("--model_name", type=str, default="gpt-3.5-turbo-0125")
+   parser.add_argument("--model_name", type=str, default="qwen3.8:27b")
    parser.add_argument("--top_n", type=int, default=30)
    parser.add_argument("--top_k", type=int, default=3)
    parser.add_argument("--max_length", type=int, default=3)
